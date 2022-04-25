@@ -74,6 +74,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
 }
 .main-nav-link:hover,
 .main-nav-link:focus,
@@ -106,11 +109,13 @@ ul {
 .contacts-nav:not(:last-child) {
   margin-right: 50px;
 }
-.auth-list {
+.nav-mail {
   margin-left: auto;
 }
 .icon-header {
-  fill: var(--primary-text-color);
+  fill: currentColor;
+
+  margin-right: 10px;
 }
 
 /* footer */
@@ -196,7 +201,11 @@ ul {
 .section-hero {
   max-width: 1600px;
   background-color: var(--background-color-footer);
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
